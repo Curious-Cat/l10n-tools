@@ -71,3 +71,6 @@ Localization tools
       domains.[domain].google-docs.sheet-name  도메인 별로 동기화에 사용할 구글 문서 내 시트 이름
       google-docs.client-secret-path           구글 문서 동기화 API 호출시 사용할 secret 파일 위치
 ```
+
+# reset auth
+```rm -f node_modules/.credentials/google-docs-syncer.json```

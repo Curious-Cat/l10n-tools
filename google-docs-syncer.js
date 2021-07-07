@@ -70,7 +70,7 @@ async function authorize(sheetName, credentials) {
 }
 
 async function getToken(oauth2Client) {
-    const tokenPath = path.join(process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE, '.credentials', 'google-docs-syncer.json')
+    const tokenPath = path.join(__dirname, '..', '.credentials', 'google-docs-syncer.json')
 
     // Check if we have previously stored a token.
     try {
